@@ -10,11 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@lexical/react": "^0.12.2",
+    "highlight.js": "^11.9.0",
+    "lexical": "^0.12.2",
     "mustache": "^4.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.3",
     "react-mustache-template-component": "^2.1.2",
-    "styled-components": "^6.0.8"
+    "styled-components": "^6.0.8",
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
