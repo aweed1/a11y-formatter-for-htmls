@@ -14,23 +14,21 @@ import {SelectField} from './SelectField.jsx'
 import {TextField} from './TextField.jsx'
 import {FormProvider, useForm} from 'react-hook-form'
 
-export const MetadataForm = () => {
-
+export const MetadataForm = ({onSubmit}) => {
   const methods = useForm()
 
   // run this when form is submitting
-  const onSubmit = formData => {
+  const handleSubmit = formData => {
     const templateData = {
       id: uuidv4(),
       ...formData
     }
-    console.log(templateData)
-    return templateData
+    onSubmit(templateData)
   }
 
   return (
     <FormProvider {...methods}>
-      <form onSubmit={methods.handleSubmit(onSubmit)}>
+      <form onSubmit={methods.handleSubmit(handleSubmit)}>
         <TextField
           name={'originalCreator'}
           label={'Original Creator *'}
