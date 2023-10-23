@@ -11,6 +11,7 @@
     "format": "prettier --write \"**/*.+(js|jsx|json|css|md)\""
   },
   "dependencies": {
+    "beautify": "^0.0.8",
     "mustache": "^4.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
