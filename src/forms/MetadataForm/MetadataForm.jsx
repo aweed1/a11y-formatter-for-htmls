@@ -33,8 +33,6 @@ export const MetadataForm = ({onSubmit}) => {
       ...formData,
       content: fileText
     }
-
-    console.log(templateData)
     onSubmit(templateData)
   }
 
